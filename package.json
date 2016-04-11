@@ -1,7 +1,7 @@
 {
-  "name": "k-mix-api-app",
+  "name": "k-mix-api-leapmotion-mixer",
   "version": "1.0.0",
-  "description": "Web app using K-Mix",
+  "description": "Control K-Mix with LeapMotion using K-Mix API, Web MIDI, and leapjs",
   "main": "app.js",
   "scripts": {
     "build": "webpack",

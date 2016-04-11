@@ -18,7 +18,7 @@ function controlRotary(id, value){
 }
 
 function controlSVGFader(el, value, svg){
-	console.log('el', el, convertRange(value, [0, 127], [0, -90]));
+	// console.log('el', el, convertRange(value, [0, 127], [0, -90]));
 	let control = svg.querySelector(el), 
 			normValue = convertRange(value, [0, 127], [0, -90])
 	
@@ -26,6 +26,7 @@ function controlSVGFader(el, value, svg){
 }
 
 function controlSVGRotary(el, value, svg){
+	// console.log('r el', el);
 	let control = svg.querySelector(el),
 			normValue = convertRange(value, [0, 127], [-127, 127])
 

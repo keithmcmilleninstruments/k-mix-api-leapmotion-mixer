@@ -19,7 +19,6 @@ import { controlSVGRotary, controlSVGFader, controlSVGButton, controlFader, cont
 // global kmix
 let kmix;
 
-
 let helpControl = document.querySelector('.help.control'),
 		helpInput = document.querySelector('.help.input'),
 		helpMain = document.querySelector('.help.main'),
@@ -51,8 +50,10 @@ if(allowed() && webmidi){
 	console.log('Web MIDI Not Supported');
 }
 
-// Leap
-let horizontalPosition, percentageX, verticalPosition, percentageY, zPosition, percentageZ, extendedFingers = [], addFingers = 0
+// LeapMotion
+let horizontalPosition, percentageX, verticalPosition, percentageY, zPosition, percentageZ, 
+		extendedFingers = [], addFingers = 0, controlNumberFader = 1, controlNumberRotary = 1
+
 Leap.loop({
  
   hand: function(hand){
@@ -64,6 +65,9 @@ Leap.loop({
 
 	    fingers.forEach( f => {
 	    	if(f === 'thumb') return;
+	    	
+	    	controlNumberFader = (extendedFingers.length + addFingers) ? (extendedFingers.length + addFingers) : 1;
+	    	controlNumberRotary = (extendedFingers.length) ? (extendedFingers.length) : 1;
 
 	    	if(hand[f].extended){
 	    		// add fingers
@@ -82,12 +86,20 @@ Leap.loop({
 	    
 	    })
     	// console.log('# extended', extendedFingers);
-    	kmix.send('fader:' + (extendedFingers.length + addFingers), percentageY * 127)
-    			.send('pan-main:' + (extendedFingers.length + addFingers), convertRange(horizontalPosition, [-350,350], [0,127]))    
+    	// console.log('controlNumberFader', controlNumberFader);
+
+    	kmix.send('fader:' + controlNumberFader, percentageY * 127)
+    			.send('pan-main:' + controlNumberFader, convertRange(horizontalPosition, [-350,350], [0,127]))    
+  		
+  		controlSVGFader('#fader-' + controlNumberFader +' .fader-handle', percentageY * 127, svg)
+
+  		controlSVGRotary('#rotary-' + controlNumberRotary +' .rotary-handle', convertRange(horizontalPosition, [-350,350], [0,127]), svg)
   	} else {
   		verticalPosition = hand.stabilizedPalmPosition[1];
   		percentageY = getPercent(verticalPosition);
   		kmix.send('main:fader', percentageY * 127)
+
+  		controlSVGFader('#fader-master .fader-handle', percentageY * 127, svg)
   	}
   }
  
@@ -111,16 +123,6 @@ helpMisc.addEventListener('click', function(){
 	kmix.help('misc')
 })
 
-
-// tests
-function rampFader(fader, from, to){
-	let time = 0
-
-	for(let i = from; i < to; i++){
-		kmix.send('control:fader-1', i) // control, value, time, bank
-	}
-}
-
 // Listen
 // kmix.on('fader-1', callback)
 // kmix.on('button-vu', callback)
@@ -143,4 +145,4 @@ function rampFader(fader, from, to){
 // enable audio-control sysex output [0xF0, 0x00, 0x01, 0x5F, 0x23, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xF7]
 
 // Help
-// help('control') // 'control', 'input', 'main_out', 'misc'
+// help('control') // 'control', 'input', 'main', 'misc'
