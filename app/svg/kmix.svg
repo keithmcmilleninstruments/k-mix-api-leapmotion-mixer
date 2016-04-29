@@ -1,7 +1,3 @@
-<?xml version=”1.0″ standalone=”no”?>
-
-<!DOCTYPE svg PUBLIC “-//W3C//DTD SVG 1.1//EN”
-“http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd”>
 <svg version="1.1" id="kmix" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px"
 	 viewBox="0 0 400 282.7" style="enable-background:new 0 0 400 282.7;" xml:space="preserve">
 <style type="text/css">
@@ -24,6 +20,15 @@
 	.channel-select-1.active .st1, .channel-select-2.active .st1, .channel-select-3.active .st1, .channel-select-4.active .st1, .channel-select-5.active .st1, .channel-select-6.active .st1, .channel-select-7.active .st1, .channel-select-8.active .st1, .channel-select-master.active .st1, .btn-preset.active .st1 {fill:#00aeef}
 	.diamond-up.active path, .diamond-right.active path, .diamond-down.active path, .diamond-left.active path {fill:#00aeef}
 	.diamond-up.active circle{fill:maroon}
+	.vu-1.on, .vu-2.on, .vu-3.on, .vu-4.on, .vu-5.on, .vu-6.on {
+		fill:#c0fe6a
+	}
+	.vu-7.on, .vu-8.on, .vu-9.on {
+		fill:#fff173
+	}
+	.vu-10.on, .vu-11.on, .vu-12.on {
+		fill:#ff7676
+	}
 </style>
 <path class="st0" d="M0,13.5v255.7c0,0,0,13.5,13.6,13.5c13.7,0,372.6,0,372.6,0s13.8,0,13.8-13.5c0-10.3,0-255.7,0-255.7
 	S400,0,386.2,0C371.9,0,13.8,0,13.8,0S0,0,0,13.5z"/>
@@ -1049,18 +1054,18 @@
 	<g>
 		<path class="st1" d="M47.5,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,6C47.5,149.1,47.5,177.8,47.5,206.4z"/>
-		<rect x="49" y="256.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="246.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="237" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="227.1" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="217.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="207.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="197.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="187.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="177.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="167.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="158" class="st12" width="13.8" height="8.1"/>
-		<rect x="49" y="148.1" class="st12" width="13.8" height="8.1"/>
+		<rect x="49" y="256.8" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="49" y="246.9" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="49" y="237" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="49" y="227.1" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="49" y="217.3" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="49" y="207.4" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="49" y="197.5" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="49" y="187.6" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="49" y="177.7" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="49" y="167.9" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="49" y="158" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="49" y="148.1" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="49" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1068,18 +1073,18 @@
 	<g>
 		<path class="st1" d="M78.1,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C78.1,149,78.1,177.7,78.1,206.4z"/>
-		<rect x="79.8" y="256.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="246.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="237" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="227.1" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="217.2" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="207.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="197.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="187.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="177.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="167.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="157.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="79.8" y="148.1" class="st12" width="13.8" height="8.1"/>
+		<rect x="79.8" y="256.7" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="79.8" y="246.9" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="79.8" y="237" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="79.8" y="227.1" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="79.8" y="217.2" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="79.8" y="207.3" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="79.8" y="197.5" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="79.8" y="187.6" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="79.8" y="177.7" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="79.8" y="167.8" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="79.8" y="157.9" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="79.8" y="148.1" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="79.8" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1087,18 +1092,18 @@
 	<g>
 		<path class="st1" d="M108.6,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C108.6,149,108.6,177.7,108.6,206.4z"/>
-		<rect x="110.2" y="256.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="246.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="236.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="227" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="217.2" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="207.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="197.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="187.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="177.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="167.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="157.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="110.2" y="148" class="st12" width="13.8" height="8.1"/>
+		<rect x="110.2" y="256.7" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="110.2" y="246.8" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="110.2" y="236.9" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="110.2" y="227" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="110.2" y="217.2" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="110.2" y="207.3" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="110.2" y="197.4" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="110.2" y="187.5" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="110.2" y="177.6" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="110.2" y="167.8" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="110.2" y="157.9" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="110.2" y="148" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="110.2" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1106,18 +1111,18 @@
 	<g>
 		<path class="st1" d="M139.1,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C139.1,149,139.1,177.7,139.1,206.4z"/>
-		<rect x="140.7" y="255.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="245.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="236" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="226.2" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="216.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="206.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="196.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="186.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="176.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="166.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="157" class="st12" width="13.8" height="8.1"/>
-		<rect x="140.7" y="147.1" class="st12" width="13.8" height="8.1"/>
+		<rect x="140.7" y="255.8" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="140.7" y="245.9" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="140.7" y="236" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="140.7" y="226.2" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="140.7" y="216.3" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="140.7" y="206.4" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="140.7" y="196.5" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="140.7" y="186.6" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="140.7" y="176.8" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="140.7" y="166.9" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="140.7" y="157" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="140.7" y="147.1" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="140.7" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1125,18 +1130,18 @@
 	<g>
 		<path class="st1" d="M169.6,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C169.6,149,169.6,177.7,169.6,206.4z"/>
-		<rect x="171.2" y="256.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="246.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="236.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="227" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="217.2" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="207.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="197.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="187.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="177.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="167.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="157.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="171.2" y="148" class="st12" width="13.8" height="8.1"/>
+		<rect x="171.2" y="256.7" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="171.2" y="246.8" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="171.2" y="236.9" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="171.2" y="227" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="171.2" y="217.2" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="171.2" y="207.3" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="171.2" y="197.4" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="171.2" y="187.5" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="171.2" y="177.6" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="171.2" y="167.8" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="171.2" y="157.9" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="171.2" y="148" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="171.2" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1144,18 +1149,18 @@
 	<g>
 		<path class="st1" d="M200.1,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C200.1,149,200.1,177.7,200.1,206.4z"/>
-		<rect x="201.7" y="256.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="246.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="236.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="227" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="217.2" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="207.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="197.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="187.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="177.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="167.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="157.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="201.7" y="148" class="st12" width="13.8" height="8.1"/>
+		<rect x="201.7" y="256.7" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="201.7" y="246.8" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="201.7" y="236.9" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="201.7" y="227" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="201.7" y="217.2" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="201.7" y="207.3" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="201.7" y="197.4" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="201.7" y="187.5" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="201.7" y="177.6" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="201.7" y="167.8" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="201.7" y="157.9" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="201.7" y="148" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="201.7" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1163,18 +1168,18 @@
 	<g>
 		<path class="st1" d="M230.6,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C230.6,149,230.6,177.7,230.6,206.4z"/>
-		<rect x="232.2" y="256.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="246.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="237" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="227.1" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="217.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="207.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="197.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="187.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="177.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="167.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="158" class="st12" width="13.8" height="8.1"/>
-		<rect x="232.2" y="148.1" class="st12" width="13.8" height="8.1"/>
+		<rect x="232.2" y="256.8" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="232.2" y="246.9" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="232.2" y="237" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="232.2" y="227.1" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="232.2" y="217.3" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="232.2" y="207.4" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="232.2" y="197.5" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="232.2" y="187.6" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="232.2" y="177.7" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="232.2" y="167.9" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="232.2" y="158" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="232.2" y="148.1" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="232.2" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1182,18 +1187,18 @@
 	<g>
 		<path class="st1" d="M261.1,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C261.1,149,261.1,177.7,261.1,206.4z"/>
-		<rect x="262.6" y="256.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="246.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="236.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="227" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="217.2" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="207.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="197.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="187.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="177.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="167.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="157.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="262.6" y="148" class="st12" width="13.8" height="8.1"/>
+		<rect x="262.6" y="256.7" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="262.6" y="246.8" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="262.6" y="236.9" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="262.6" y="227" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="262.6" y="217.2" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="262.6" y="207.3" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="262.6" y="197.4" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="262.6" y="187.5" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="262.6" y="177.6" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="262.6" y="167.8" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="262.6" y="157.9" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="262.6" y="148" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="262.6" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>
@@ -1201,18 +1206,18 @@
 	<g>
 		<path class="st1" d="M360.9,206.4c0,28.7,0,57.4,0,57.8c0,4,4.4,6,8.5,6c4.3,0,8.4-2,8.4-6c0-1.2,0-29.5,0-57.8s0-56.5,0-57.8
 			c0-3.9-4.1-6-8.4-6c-4.1,0-8.5,2-8.5,5.9C360.9,149,360.9,177.7,360.9,206.4z"/>
-		<rect x="362.4" y="256.8" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="246.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="237" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="227.1" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="217.3" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="207.4" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="197.5" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="187.6" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="177.7" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="167.9" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="158" class="st12" width="13.8" height="8.1"/>
-		<rect x="362.4" y="148.1" class="st12" width="13.8" height="8.1"/>
+		<rect x="362.4" y="256.8" class="st12 vu-1" width="13.8" height="8.1"/>
+		<rect x="362.4" y="246.9" class="st12 vu-2" width="13.8" height="8.1"/>
+		<rect x="362.4" y="237" class="st12 vu-3" width="13.8" height="8.1"/>
+		<rect x="362.4" y="227.1" class="st12 vu-4" width="13.8" height="8.1"/>
+		<rect x="362.4" y="217.3" class="st12 vu-5" width="13.8" height="8.1"/>
+		<rect x="362.4" y="207.4" class="st12 vu-6" width="13.8" height="8.1"/>
+		<rect x="362.4" y="197.5" class="st12 vu-7" width="13.8" height="8.1"/>
+		<rect x="362.4" y="187.6" class="st12 vu-8" width="13.8" height="8.1"/>
+		<rect x="362.4" y="177.7" class="st12 vu-9" width="13.8" height="8.1"/>
+		<rect x="362.4" y="167.9" class="st12 vu-10" width="13.8" height="8.1"/>
+		<rect x="362.4" y="158" class="st12 vu-11" width="13.8" height="8.1"/>
+		<rect x="362.4" y="148.1" class="st12 vu-12" width="13.8" height="8.1"/>
 	</g>
 	<rect x="362.4" y="237" class="st13 fader-handle" width="13.8" height="27.9"/>
 </g>

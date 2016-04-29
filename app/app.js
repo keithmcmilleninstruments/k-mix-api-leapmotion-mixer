@@ -13,8 +13,7 @@ import KMIX from 'k-mix-api'
 import { allowed, webmidi } from './modules/browser'
 import { convertRange } from './modules/utilities'
 import request from './modules/midiRequest'
-import { default as ac, playAll, stopAll, buildSounds } from './modules/audio'
-import { controlSVGRotary, controlSVGFader, controlSVGButton, controlFader, controlRotary, faderDrag, rotaryDrag, buttonClick, resetfadersSVG, resetrotariesSVG } from './modules/svgControls'
+import { controlSVGRotary, controlSVGFader } from './modules/svgControls'
 	
 // global kmix
 let kmix;
@@ -91,15 +90,14 @@ Leap.loop({
     	kmix.send('fader:' + controlNumberFader, percentageY * 127)
     			.send('pan-main:' + controlNumberFader, convertRange(horizontalPosition, [-350,350], [0,127]))    
   		
-  		controlSVGFader('#fader-' + controlNumberFader +' .fader-handle', percentageY * 127, svg)
-
-  		controlSVGRotary('#rotary-' + controlNumberRotary +' .rotary-handle', convertRange(horizontalPosition, [-350,350], [0,127]), svg)
+  		controlSVGFader('fader-' + controlNumberFader, percentageY * 127, svg)
+  		controlSVGRotary('rotary-' + controlNumberRotary, convertRange(horizontalPosition, [-350,350], [0,127]), svg)
   	} else {
   		verticalPosition = hand.stabilizedPalmPosition[1];
   		percentageY = getPercent(verticalPosition);
   		kmix.send('main:fader', percentageY * 127)
-
-  		controlSVGFader('#fader-master .fader-handle', percentageY * 127, svg)
+  		
+  		controlSVGFader('fader-master', percentageY * 127, svg)
   	}
   }
  

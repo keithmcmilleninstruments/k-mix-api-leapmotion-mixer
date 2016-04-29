@@ -1,5 +1,4 @@
 import { convertRange } from './utilities'
-import { buildSounds, playAll, stopAll } from './audio'
 
 function controlFader(id, value){
 	let control = id.split('-'), channel = control[1]
@@ -19,15 +18,32 @@ function controlRotary(id, value){
 
 function controlSVGFader(el, value, svg){
 	// console.log('el', el, convertRange(value, [0, 127], [0, -90]));
-	let control = svg.querySelector(el), 
+	let control = svg.querySelector('#' + el +' .fader-handle'), 
 			normValue = convertRange(value, [0, 127], [0, -90])
 	
 	control.setAttribute('transform', 'translate(0, ' + normValue + ')')
+
+	faderVU(el, value, svg)
+}
+
+function faderVU(el, value, svg){
+	let control = svg.querySelector(el), 
+			vuVal = Math.floor(convertRange(value, [0, 127], [1, 12]))
+
+	for(let i = 12; i > 0; i--){
+		let vu = svg.querySelector('#' + el + ' .vu-' + i);
+
+		if(i <= vuVal){
+			vu.classList.add('on')
+		} else {
+			vu.classList.remove('on')
+		}
+	}	
 }
 
 function controlSVGRotary(el, value, svg){
 	// console.log('r el', el);
-	let control = svg.querySelector(el),
+	let control = svg.querySelector('#' + el +' .rotary-handle'),
 			normValue = convertRange(value, [0, 127], [-127, 127])
 
   control.setAttribute('transform','rotate('+ normValue +' '+ control.previousElementSibling.cx.animVal.value +' '+ control.previousElementSibling.cy.animVal.value +')');
@@ -44,18 +60,18 @@ function controlSVGButton(el, value, svg){
   		console.log('record');
   		break;
   	case 'diamond-right':
-  		playAll()
+  		// playAll()
   		console.log('play');
   		break;
   	case 'diamond-down':
-  		stopAll()
-  		buildSounds()
+  		// stopAll()
+  		// buildSounds()
   		console.log('stop');
   		break;
   	case 'diamond-left':
-  		stopAll()
-  		buildSounds()
-  		playAll()
+  		// stopAll()
+  		// buildSounds()
+  		// playAll()
   		console.log('rewind');
   		break;
   }
