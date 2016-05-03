@@ -169,12 +169,16 @@
 
 				(0, _svgControls.controlSVGFader)('fader-' + controlNumberFader, percentageY * 127, svg);
 				(0, _svgControls.controlSVGRotary)('rotary-' + controlNumberRotary, (0, _utilities.convertRange)(horizontalPosition, [-350, 350], [0, 127]), svg);
+
+				console.log('fader-' + controlNumberFader, percentageY * 127);
+				console.log('rotary-' + controlNumberRotary, (0, _utilities.convertRange)(horizontalPosition, [-350, 350], [0, 127]));
 			} else {
 				verticalPosition = _hand.stabilizedPalmPosition[1];
 				percentageY = getPercent(verticalPosition);
 				kmix.send('main:fader', percentageY * 127);
-
 				(0, _svgControls.controlSVGFader)('fader-master', percentageY * 127, svg);
+
+				console.log('master fader', percentageY * 127);
 			}
 		}
 

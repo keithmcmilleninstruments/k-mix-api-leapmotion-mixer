@@ -92,12 +92,16 @@ Leap.loop({
   		
   		controlSVGFader('fader-' + controlNumberFader, percentageY * 127, svg)
   		controlSVGRotary('rotary-' + controlNumberRotary, convertRange(horizontalPosition, [-350,350], [0,127]), svg)
+
+  		console.log('fader-' + controlNumberFader, percentageY * 127);
+  		console.log('rotary-' + controlNumberRotary, convertRange(horizontalPosition, [-350,350], [0,127]))
   	} else {
   		verticalPosition = hand.stabilizedPalmPosition[1];
   		percentageY = getPercent(verticalPosition);
   		kmix.send('main:fader', percentageY * 127)
-  		
   		controlSVGFader('fader-master', percentageY * 127, svg)
+
+  		console.log('master fader', percentageY * 127);
   	}
   }
  

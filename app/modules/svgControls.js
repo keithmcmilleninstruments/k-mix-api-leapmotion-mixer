@@ -20,6 +20,8 @@ function controlSVGFader(el, value, svg){
 	// console.log('el', el, convertRange(value, [0, 127], [0, -90]));
 	let control = svg.querySelector('#' + el +' .fader-handle'), 
 			normValue = convertRange(value, [0, 127], [0, -90])
+
+	if(normValue === NaN ) return
 	
 	control.setAttribute('transform', 'translate(0, ' + normValue + ')')
 
@@ -45,6 +47,8 @@ function controlSVGRotary(el, value, svg){
 	// console.log('r el', el);
 	let control = svg.querySelector('#' + el +' .rotary-handle'),
 			normValue = convertRange(value, [0, 127], [-127, 127])
+
+	if(normValue === NaN ) return
 
   control.setAttribute('transform','rotate('+ normValue +' '+ control.previousElementSibling.cx.animVal.value +' '+ control.previousElementSibling.cy.animVal.value +')');
 }
